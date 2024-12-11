@@ -23,8 +23,11 @@ function createItem(a) {
     buttonDiv.classList.add("buttons");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.addEventListener('click', (e) => crossItem(e));
     const button = document.createElement("button");
     button.textContent = 'Remove';
+    button.classList.add("itemRemove");
+    button.addEventListener('click', (e) => removeItem(e));
     // appending checkbox and remove button to the div
     buttonDiv.appendChild(checkbox);
     buttonDiv.appendChild(button)
@@ -39,12 +42,18 @@ function createItem(a) {
 
 
 }
-
-
-
-
-
-
-
 document.getElementById("myForm").addEventListener("submit", (e) => addItem(e));
 console.log("JS loaded")
+
+
+// Remove logic
+function removeItem(e) {
+    console.log(e.target.parentNode.parentNode);
+    e.target.parentNode.parentNode.parentNode.remove();
+}
+
+function crossItem(e){
+    console.log(e.target.parentNode.parentNode.parentNode)
+    e.target.parentNode.parentNode.parentNode.classList.toggle("crossed")
+}
+

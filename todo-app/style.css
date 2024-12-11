@@ -30,21 +30,41 @@ form input{
 
 }
 button#add{
-    background-color: #22f;
+    background-color: #0a0;
     border-color: #000;
     font-size: large;
     padding: 5px;
     border-radius: 10px;
 }
+ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
 ul li{
     border-bottom: solid 2px white;
+    margin: 0;
 
 }
 
 ul li div.listItem {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-width: 300px;
-    margin: 20px;
+    margin: 10px;
 
+}
+
+ul li div.listItem button{
+    background-color: #c00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+li.crossed {
+    text-decoration: line-through;
+    opacity: 0.5
 }
