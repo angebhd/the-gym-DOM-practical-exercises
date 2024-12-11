@@ -1,0 +1,49 @@
+body {
+    margin:0;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+}
+header, main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    
+    background-color: #222;
+}
+
+main{
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+form input{
+    color: white;
+    background-color: #333;
+    color:white;
+    border-color: #eee;
+    font-size: large;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+button#add{
+    background-color: #22f;
+    font-size: large;
+    padding: 5px;
+    border-radius: 10px;
+}
+ul li{
+    border-bottom: solid 2px white;
+
+}
+
+ul li div {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    margin: 20px;
+
+}
