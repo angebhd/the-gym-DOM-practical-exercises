@@ -13,16 +13,20 @@
         <h1> To Do - App</h1>
     </header>
     <main>
-        <form>
-            <input type="text">
+        <form id="myForm">
+            <input type="text" name="Taks" id="inputTask">
             <button type="submit" id="add">Add</button>
         </form>
 
-        <ul id="list">
-            <li><div><p>Item1</p> <button>Remove</button></div></li>
-            <li><div><p>Item1</p> <button>Remove</button></div></li>
-            <li><div><p>Item1</p> <button>Remove</button></div></li>
-            <li><div><p>Item1</p> <button>Remove</button></div></li>
+        <ul id="todoList">
+           
+            <li>
+                <div class="listItem">
+                    <p>Item1</p>
+                    <div class="buttons"><input type="checkbox" name="done" id="done"> <button>Remove</button></div>
+                </div>
+                </div>
+            </li>
         </ul>
     </main>
     <footer></footer>
